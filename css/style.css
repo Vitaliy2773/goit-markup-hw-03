@@ -19,10 +19,29 @@
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 .button,
 .button-secondary {
-  font-family: inherit;
   cursor: pointer;
+}
+
+img {
+  display: block;
 }
 
 body {
@@ -30,6 +49,24 @@ body {
   color: var(--title-text-color);
   background-color: var(--primary-bg-color);
 }
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.list-name {
+  margin-bottom: 8px;
+}
+
 /* Components */
 .modal-open-btn {
   font-family: inherit;
@@ -37,12 +74,29 @@ body {
 }
 
 .modal-open-btn {
+  min-width: 170px;
+  padding: 16px 30px;
+  flex-direction: row;
+  align-items: flex-start;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}
+
+.modal-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 48px;
+  padding-bottom: 188px;
+  padding-left: 636px;
+  padding-right: 636px;
 }
 
 .modal-open-btn:hover,
@@ -72,7 +126,16 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+.site-nav {
+  display: flex;
+  align-items: center;
+  column-gap: 76px;
+}
 
+.menu-list {
+  display: flex;
+  column-gap: 40px;
+}
 .site-nav-list {
   font-family: var(--main-font-family);
   font-style: normal;
@@ -88,7 +151,19 @@ body {
   color: var(--btn-hover-color);
 }
 
-/* contacts */
+/* Header/contacts */
+.page-header {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
+
 .contacts-list {
   font-family: var(--main-font-family);
   font-style: normal;
@@ -96,10 +171,12 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  margin-right: 40px;
 }
 
 .contacts-adress {
   font-style: normal;
+  margin-left: auto;
 }
 
 .contacts-list:hover,
@@ -109,6 +186,8 @@ body {
 
 /* Hero section(1) */
 .hero {
+  padding-top: 188px;
+  padding-bottom: 292px;
   background-color: var(--primary-text-color);
 }
 
@@ -122,6 +201,11 @@ body {
 }
 
 /* About us section(2) */
+.section-about {
+  display: flex;
+  column-gap: 24px;
+}
+
 .title {
   font-family: var(--main-font-family);
   font-weight: 500;
@@ -139,8 +223,17 @@ body {
   color: var(--title-text-color);
 }
 
-/* What are we doing section(3) */
+/* What are we doing section/Work(3) */
+.work-list {
+  display: flex;
+  column-gap: 24px;
+}
+
+.work-list-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
 .section-title {
+  margin-bottom: 72px;
   font-family: var(--main-font-family);
   font-size: 36px;
   line-height: 1.11;
@@ -151,17 +244,40 @@ body {
 }
 
 /* Our team section(4) */
+
+.employees-list {
+  display: flex;
+  column-gap: 24px;
+}
+
+.employees-list-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 68px;
+  padding-right: 68px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .section-employees {
   background-color: var(--secondary-bg-color);
 }
 
 .our-team {
+  flex-basis: calc((100% - 72px) / 4);
   background-color: var(--primary-bg-color);
 }
 
 /* Footer */
 .footer {
   background-color: var(--primary-text-color);
+}
+
+.footer-web-studio {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 1020px;
 }
 .span-logo-footer {
   color: var(--secondary-bg-color);
@@ -176,6 +292,21 @@ body {
 }
 
 /* Portfolio */
+.portfolio-list {
+  display: flex;
+  column-gap: 24px;
+  flex-wrap: wrap;
+}
+
+.employees-list-text-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+.portfolio-list-item {
+  flex-basis: calc((100% - 192px) / 9);
+}
 
 .button-secondary {
   font-family: var(--main-font-family);
@@ -186,7 +317,19 @@ body {
   color: var(--accent-color);
 }
 
+.btn-scnd {
+  display: flex;
+  column-gap: 24px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 168px;
+  padding-bottom: 72px;
+  padding-left: 426px;
+  padding-right: 426px;
+}
+
 .button-secondary {
+  padding: 12px 24px;
   background-color: var(--secondary-bg-color);
 }
 
