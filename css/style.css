@@ -86,6 +86,9 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
 }
@@ -186,6 +189,7 @@ body {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
+  margin: auto;
   letter-spacing: 0.02em;
   color: var(--primary-bg-color);
   max-width: 496px;
