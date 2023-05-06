@@ -281,11 +281,8 @@ body {
 
 /* Footer */
 .footer {
-  background-color: var(--primary-text-color);
-}
-
-.footer-web-studio {
   padding: 100px 0px;
+  background-color: var(--primary-text-color);
 }
 
 .footer-link {
