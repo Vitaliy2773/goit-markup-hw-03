@@ -242,6 +242,11 @@ body {
 }
 
 /* Our team section(4) */
+.section-employees {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--secondary-bg-color);
+}
 
 .employees-list {
   display: flex;
@@ -269,12 +274,6 @@ body {
 }
 .employees-list-content {
   padding: 32px 16px;
-}
-
-.section-employees {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  background-color: var(--secondary-bg-color);
 }
 
 .our-team {
